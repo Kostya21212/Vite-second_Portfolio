@@ -10,6 +10,7 @@ document.getElementById('taskForm').addEventListener('submit', function (e) {
         title: titleEl.value,
         description:descEl.value,
         priority: selectEl.value,
+        data: Date.now(),
     })
 })
 function addTask(task){
