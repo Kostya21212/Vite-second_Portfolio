@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>About html</h1>
-    <nav>
-        <a href="/index.html" class="text-black hover:text-blue-700 hover:underline"></a>
-    </nav>
-</body>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../index.html">Portfolio</a>
+      </div>
+      <div class="navbar-center !items-center">
+        <a class="navbar-item" href="../index.html">Home</a>
+        <a class="navbar-item navbar-active" href="#">About</a>
+        <div class="dropdown-container justify-center">
+          <div class="dropdown">
+            <label class="btn btn-solid-primary my-2" tabindex="0">Apps</label>
+            <div class="dropdown-menu dropdown-menu-bottom-center">
+              <a class="dropdown-item text-sm" href="./todo.html">Todo</a>
+              <a class="dropdown-item text-sm" href="./post.html">Blog Posts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button">Edit</button>
+    <div class="flex justify-center mt-10">
+      <div class="card">
+        <div id="cardBody" class="card-body"></div>
+      </div>
+    </div>
+    <script type="module" src="../src/about.js"></script>
+  </body>
 </html>

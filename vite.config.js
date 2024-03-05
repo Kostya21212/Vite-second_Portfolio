@@ -5,8 +5,9 @@ export default defineConfig({
   build:{
     rollupOptions:{
       input:{
-        main: resolve(__dirname,'/index.html'),
-        about: resolve(__dirname,'./pages/about.html')
+        main: resolve(__dirname,'index.html'),
+       about:resolve(__dirname,'./src/about.js'),
+       todo:resolve(__dirname,'./pages/todo.html')
       }
     }
   }

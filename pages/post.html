@@ -2,29 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
    rel="stylesheet"
    href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"
 />
     <link href="./output.css" rel="stylesheet">
-    <title>Vite App</title>
+    <title>Blog</title>
   </head>
   <body>
     <div class="navbar">
       <div class="navbar-start">
-        <a class="navbar-item">Portfolio</a>
+        <a class="navbar-item" href="../index.html">Portfolio</a>
       </div>
       <div class="navbar-center !items-center">
-        <a class="navbar-item navbar-active">Home</a>
-        <a class="navbar-item" href="./pages/about.html">About</a>
+        <a class="navbar-item" href="../index.html">Home</a>
+        <a class="navbar-item" href="./about.html">About</a>
         <div class="dropdown-container justify-center">
           <div class="dropdown">
             <label class="btn btn-solid-primary my-2" tabindex="0">Apps</label>
             <div class="dropdown-menu dropdown-menu-bottom-center">
-              <a class="dropdown-item text-sm" href="./pages/todo.html">Todo</a>
-              <a class="dropdown-item text-sm" href="./pages/post.html"
+              <a class="dropdown-item text-sm" href="./todo.html">Todo</a>
+              <a
+                class="dropdown-item text-sm dropdown-active"
+                href="./post.html"
                 >Blog Posts</a
               >
             </div>
@@ -32,20 +33,11 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-10">
-      <div class="border border-sky-300 p-5 rounded-md">
-        <div class="mb-2">
-          <input
-            id="calculatorInput"
-            class="input text-end"
-            placeholder="Calculator"
-          />
-        </div>
-        <table id="calculatorBtn"></table>
-      </div>
+    <div id="pageWrap" class="container">
+      <h1 class="text-5xl text-center mt-5">Blog Posts</h1>
+      <div id="cardWrap" class="flex gap-3 flex-wrap mt-2 justify-center"></div>
     </div>
-    <!-- <script pt type="module" src="/main.js"></script> -->
-    <script pt type="module" src="/main.js"></script>
+    <script type="module" src="../src/posts/index.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
